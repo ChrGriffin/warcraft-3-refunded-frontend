@@ -45,11 +45,15 @@
         margin: 0 auto;
 
         .item {
-            border: 2px solid rgb(100, 100, 100);
-            background-image: url("https://bnetcmsus-a.akamaihd.net/cms/template_resource/L6EBVPLILUWT1541005857461.jpg");
-            background-position: bottom center;
+            border: 2px solid #464646;
+            background-image: url("https://bnetcmsus-a.akamaihd.net/cms/template_resource/K18CVIDGUY421541005858145.jpg");
+            background-position: top right;
             width: 48.5%;
             padding: 1em;
+
+            &:first-child {
+                background-position: top center;
+            }
 
             h5 {
                 font-size: 1.4rem;
