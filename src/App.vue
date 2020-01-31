@@ -124,7 +124,7 @@
         font-size: 1.1rem;
         font-style: italic;
         text-align: left;
-        border: 2px solid #464646;
+        border: 2px solid $darkgrey;
         padding: 1rem;
     }
 </style>

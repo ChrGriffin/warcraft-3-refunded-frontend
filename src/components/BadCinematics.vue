@@ -5,7 +5,12 @@
         <div class="divider"></div>
         <p class="large">With Warcraft III: Reforged, you can now watch the original cinematics from 2002, in their original quality, completely unchanged!</p>
         <p class="large">And if you were disappointed to see Blizzard adding more dynamic and interesting cutscenes, then worry not! They backed far, far away from that idea. But not before taking your preorder based on what they originally showed!</p>
-        <youtube video-id="-4K2u2KbpdE" :player-width="playerDimensions.width" :player-height="playerDimensions.height" />
+        <div class="video-wrapper" v-bind:style="{width: playerDimensions.width + 'px', height: playerDimensions.height + 'px'}">
+            <div v-if="!videoPlaying" v-bind:style="{width: playerDimensions.width + 'px', height: playerDimensions.height + 'px'}" class="video-preview" @click="playVideo">
+                <img :src="require('@/assets/images/youtube.png')" />
+            </div>
+            <youtube v-if="videoPlaying" youtube video-id="-4K2u2KbpdE" :player-width="playerDimensions.width" :player-height="playerDimensions.height" :player-vars="{autoplay: 1}" />
+        </div>
     </section>
 </template>
 
@@ -14,6 +19,9 @@
 
     @Component
     export default class BadCinematics extends Vue {
+
+        private videoPlaying = false;
+
         get playerDimensions() {
             if(window.innerWidth < 540) {
                 return {width: 384, height: 216};
@@ -37,6 +45,10 @@
 
             return {width: 1024, height: 576};
         }
+
+        public playVideo() {
+            this.videoPlaying = true;
+        }
     }
 </script>
 
@@ -52,4 +64,30 @@
     p:nth-of-type(2) {
         margin-bottom: 3rem;
     }
+
+    .video-wrapper {
+        margin: 0 auto;
+        display: inline-block;
+
+        .video-preview {
+            background-image: url("./../assets/images/videopreview.png");
+            background-size: cover;
+            position: relative;
+            border: 2px solid $darkgrey;
+
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+
+            &:hover {
+                cursor: pointer;
+                border: 2px solid $offwhite;
+            }
+        }
+    }
+
+
 </style>

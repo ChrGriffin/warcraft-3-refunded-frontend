@@ -45,7 +45,7 @@
         margin: 0 auto;
 
         .item {
-            border: 2px solid #464646;
+            border: 2px solid $darkgrey;
             background-image: url("https://bnetcmsus-a.akamaihd.net/cms/template_resource/K18CVIDGUY421541005858145.jpg");
             background-position: top right;
             width: 48.5%;
