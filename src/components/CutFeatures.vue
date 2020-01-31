@@ -6,7 +6,7 @@
                 <h4>Cut Features</h4>
                 <div class="divider"></div>
                 <div class="text">
-                    <p class="large">Warcraft III: Reforged boasts an impressive number of fun and exciting features that were promised before being cut during development!</p>
+                    <p class="large">Warcraft III: Reforged boasts an impressive number of fun and exciting features that were promised before being cut during development. Some of them are still being advertised as of this moment!</p>
                     <div class="item">
                         <p class="title">Campaign Overhaul</p>
                         <p>A full campaign overhaul to bring the story and location in line with Warcraft lore as it stands today. Instead, it's the exact same campaign with new models.</p>
