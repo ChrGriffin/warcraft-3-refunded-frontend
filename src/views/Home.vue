@@ -3,6 +3,7 @@
         <hero-header />
         <cut-features />
         <bad-cinematics />
+        <anti-consumer />
     </div>
 </template>
 
@@ -11,9 +12,10 @@
     import HeroHeader from '@/components/HeroHeader';
     import BadCinematics from '@/components/BadCinematics';
     import CutFeatures from '@/components/CutFeatures';
+    import AntiConsumer from '@/components/AntiConsumer';
 
     @Component({
-        components: { HeroHeader, CutFeatures, BadCinematics },
+        components: {HeroHeader, CutFeatures, BadCinematics, AntiConsumer },
     })
     export default class Home extends Vue {
     }
