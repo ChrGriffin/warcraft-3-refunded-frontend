@@ -80,4 +80,16 @@
             line-height: 1.8;
         }
     }
+
+    @media screen and (max-width: 600px) {
+        section {
+            background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("./../assets/images/background2.jpg");
+            background-position: right center;
+        }
+
+        .content {
+            width: 100%;
+            padding-left: 0;
+        }
+    }
 </style>
