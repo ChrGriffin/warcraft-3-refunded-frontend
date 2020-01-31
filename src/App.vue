@@ -2,15 +2,17 @@
     <div id="app">
         <site-navigation/>
         <router-view />
+        <site-footer />
     </div>
 </template>
 
 <script lang="ts">
     import {Component, Vue} from 'vue-property-decorator';
     import SiteNavigation from './components/SiteNavigation.vue';
+    import SiteFooter from '@/components/SiteFooter.vue';
 
     @Component({
-        components: { SiteNavigation },
+        components: {SiteFooter, SiteNavigation },
     })
     export default class App extends Vue {
     }
@@ -62,6 +64,10 @@
 
     section {
         padding: 3rem 2rem calc(3rem + 26px);
+    }
+
+    footer {
+        padding: 3rem 2rem;
     }
 
     .divider {

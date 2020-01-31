@@ -3,7 +3,7 @@
         <div class="header-content">
             <div>
                 <h1><img :src="require('@/assets/images/logo.png')" alt="Warcraft 3 Refucked Logo"/></h1>
-                <h2><span>A broken, dishonest, anti-consumer,</span><span>glorified remaster.</span></h2>
+                <h2><span>A broken, dishonest, anti-consumer,</span><span>glorified remaster</span></h2>
             </div>
         </div>
     </header>

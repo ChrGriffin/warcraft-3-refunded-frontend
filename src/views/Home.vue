@@ -2,8 +2,8 @@
     <div>
         <hero-header />
         <cut-features />
-        <bad-cinematics />
         <anti-consumer />
+        <bad-cinematics />
         <map-ownership />
     </div>
 </template>
