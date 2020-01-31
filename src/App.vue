@@ -39,8 +39,9 @@
     }
 
     header, section {
-        padding-bottom: 26px;
+        padding-bottom: 22px;
         position: relative;
+        overflow: hidden;
 
         &:after {
             display: block;
@@ -50,13 +51,17 @@
             background-image: url("assets/images/border.png");
             background-size: contain;
             position: absolute;
-            bottom: 0;
+            bottom: -4px;
             left: 0;
         }
     }
 
+    .grid {
+        display: flex;
+    }
+
     section {
-        padding: 3rem 0 calc(3rem + 26px);
+        padding: 3rem 2rem calc(3rem + 26px);
     }
 
     .divider {
@@ -86,12 +91,21 @@
         letter-spacing: 0.1rem;
     }
 
-    p.large {
+    p.large, ul.large {
         font-size: 1.5rem;
         color: $offwhite;
         max-width: 750px;
         font-weight: bold;
         line-height: 1.2;
         margin: 0 auto 1rem;
+    }
+
+    ul.large {
+        list-style: disc;
+        padding-left: 2rem;
+
+        li {
+            padding-bottom: 1rem;
+        }
     }
 </style>

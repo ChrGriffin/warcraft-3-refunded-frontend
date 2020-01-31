@@ -70,6 +70,6 @@
     }
 
     p:nth-of-type(2) {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
 </style>
