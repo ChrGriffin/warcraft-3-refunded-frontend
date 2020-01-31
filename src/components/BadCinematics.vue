@@ -35,27 +35,7 @@
                 return {width: 896, height: 504};
             }
 
-            if(window.innerWidth < 1300) {
-                return {width: 1024, height: 576};
-            }
-
-            if(window.innerWidth < 1420) {
-                return {width: 1280, height: 720};
-            }
-
-            if(window.innerWidth < 1600) {
-                return {width: 1408, height: 792};
-            }
-
-            if(window.innerWidth < 1700) {
-                return {width: 1536, height: 864};
-            }
-
-            if(window.innerWidth < 1930) {
-                return {width: 1664, height: 1008};
-            }
-
-            return {width: 1920, height: 1080};
+            return {width: 1024, height: 576};
         }
     }
 </script>
