@@ -18,7 +18,9 @@
 
 <style lang="scss">
     @import "~modern-css-reset";
+    @import "./assets/scss/variables";
 
+    @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
     @font-face {
         font-family: 'BlizzWeb';
         src: url('assets/fonts/Blizz.woff2') format('woff2'),
@@ -28,16 +30,68 @@
     }
 
     #app {
-        font-family: 'Avenir', Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
         background-color: black;
-        min-height: 100vh;
+        color: $white;
+        font-family: 'Lato', sans-serif;
     }
 
-    h1, h2, h3 {
+    header, section {
+        padding-bottom: 26px;
+        position: relative;
+
+        &:after {
+            display: block;
+            content: "";
+            height: 26px;
+            width: 100%;
+            background-image: url("assets/images/border.png");
+            background-size: contain;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    section {
+        padding: 3rem 0 calc(3rem + 26px);
+    }
+
+    .divider {
+        height: 30px;
+        background-image: url("assets/images/divider.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    h1, h2, h4 {
         font-family: 'BlizzWeb', serif;
         text-transform: uppercase;
+    }
+
+    h3 {
+        color: $gold;
+        text-transform: uppercase;
+        font-size: 1.25rem;
+        letter-spacing: 0.1rem;
+    }
+
+    h4 {
+        font-size: 3rem;
+        letter-spacing: 0.1rem;
+    }
+
+    p.large {
+        font-size: 1.5rem;
+        color: $offwhite;
+        max-width: 750px;
+        font-weight: bold;
+        line-height: 1.2;
+        margin: 0 auto 1rem;
     }
 </style>

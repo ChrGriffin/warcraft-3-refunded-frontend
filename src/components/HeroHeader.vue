@@ -1,8 +1,10 @@
 <template>
     <header>
-        <div>
-            <h1><img :src="require('@/assets/images/logo.png')" alt="Warcraft 3 Refucked Logo"/></h1>
-            <h2><span>A buggy, broken, dishonest, anti-consumer,</span><span>glorified remaster.</span></h2>
+        <div class="header-content">
+            <div>
+                <h1><img :src="require('@/assets/images/logo.png')" alt="Warcraft 3 Refucked Logo"/></h1>
+                <h2><span>A buggy, dishonest, anti-consumer,</span><span>glorified remaster.</span></h2>
+            </div>
         </div>
     </header>
 </template>
@@ -16,18 +18,15 @@
 </script>
 
 <style scoped lang="scss">
-    @import "./../assets/scss/variables";
-
-    header {
-        color: $white;
+    .header-content {
         text-shadow: black 0 3px, black 0 0 50px;
-        height: 90vh;
         display: flex;
         align-content: center;
         justify-content: center;
         background-image: url("https://bnetcmsus-a.akamaihd.net/cms/template_resource/ed/ED7WF47Q19421579634270750.jpg");
         background-size: cover;
         background-position: center center;
+        min-height: 90vh;
 
         div {
             align-self: center;
