@@ -91,12 +91,16 @@
         letter-spacing: 0.1rem;
     }
 
+    p, ul, blockquote {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
     p.large, ul.large {
         font-size: 1.5rem;
         color: $offwhite;
-        max-width: 750px;
         font-weight: bold;
-        line-height: 1.2;
+        line-height: 1.3;
         margin: 0 auto 1rem;
     }
 
@@ -107,5 +111,14 @@
         li {
             padding-bottom: 1rem;
         }
+    }
+
+    blockquote {
+        margin: 0 auto 2rem;
+        font-size: 1.1rem;
+        font-style: italic;
+        text-align: left;
+        border: 2px solid #464646;
+        padding: 1rem;
     }
 </style>

@@ -4,6 +4,7 @@
         <cut-features />
         <bad-cinematics />
         <anti-consumer />
+        <map-ownership />
     </div>
 </template>
 
@@ -13,9 +14,10 @@
     import BadCinematics from '@/components/BadCinematics';
     import CutFeatures from '@/components/CutFeatures';
     import AntiConsumer from '@/components/AntiConsumer';
+    import MapOwnership from '@/components/MapOwnership';
 
     @Component({
-        components: {HeroHeader, CutFeatures, BadCinematics, AntiConsumer },
+        components: {HeroHeader, CutFeatures, BadCinematics, AntiConsumer, MapOwnership},
     })
     export default class Home extends Vue {
     }
