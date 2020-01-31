@@ -23,7 +23,7 @@
         display: flex;
         align-content: center;
         justify-content: center;
-        background-image: url("https://bnetcmsus-a.akamaihd.net/cms/template_resource/ed/ED7WF47Q19421579634270750.jpg");
+        background-image: url("./../assets/images/background1.jpg");
         background-size: cover;
         background-position: center center;
         min-height: 90vh;

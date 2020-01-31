@@ -22,7 +22,7 @@
 
 <style scoped lang="scss">
     footer {
-        background-image: url("https://bnetcmsus-a.akamaihd.net/cms/template_resource/MJCB8ZO84P3B1541005857210.jpg");
+        background-image: url("./../assets/images/background5.jpg");
         background-position: top center;
         background-size: cover;
     }

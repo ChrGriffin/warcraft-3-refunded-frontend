@@ -21,7 +21,7 @@
     @import "./../assets/scss/variables";
 
     section {
-        background-image: url("https://bnetcmsus-a.akamaihd.net/cms/template_resource/I28KFPNWZVOT1541005874338.jpg");
+        background-image: url("./../assets/images/background4.jpg");
         background-size: cover;
         background-position: top center;
     }

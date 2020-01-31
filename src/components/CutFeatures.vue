@@ -39,7 +39,7 @@
     @import "./../assets/scss/variables";
 
     section {
-        background-image: linear-gradient(to left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("https://bnetcmsus-a.akamaihd.net/cms/template_resource/QS9WH3KDU30U1541005854721.jpg");
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("./../assets/images/background2.jpg");
         background-size: auto;
         background-repeat: no-repeat;
         background-position: calc(50% + 250px) center;

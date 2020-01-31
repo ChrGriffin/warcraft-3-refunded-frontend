@@ -44,7 +44,7 @@
     @import "./../assets/scss/variables";
 
     section {
-        background-image: url("https://bnetcmsus-a.akamaihd.net/cms/template_resource/GBTA0BSUH9V61541005863458.jpg");
+        background-image: url("./../assets/images/background3.jpg");
         background-size: cover;
         background-position: center top;
     }
