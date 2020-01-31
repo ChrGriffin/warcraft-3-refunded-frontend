@@ -67,4 +67,18 @@
             }
         }
     }
+
+    @media screen and (max-width: 600px) {
+        .grid {
+            display: block;
+
+            .item {
+                width: 100%;
+
+                &:first-of-type {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
 </style>
