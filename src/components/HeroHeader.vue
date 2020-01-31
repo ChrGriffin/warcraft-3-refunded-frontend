@@ -55,4 +55,11 @@
             }
         }
     }
+
+    @media screen and (max-width: 600px) {
+        .header-content {
+            min-height: 0;
+            padding: 1rem 0 2rem;
+        }
+    }
 </style>
