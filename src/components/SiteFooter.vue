@@ -22,7 +22,7 @@
 
 <style scoped lang="scss">
     footer {
-        background-image: url("https://res.cloudinary.com/dqqlm018i/image/upload/v1580914973/warcraft_3_refunded/background5_kaccxp.jpg");
+        background-image: url("https://christiangriffin.ca/warcraft3refunded/warcraft_3_refunded_2020-02-05_10_17/background5_kaccxp.jpg");
         background-position: top center;
         background-size: cover;
     }
@@ -42,19 +42,19 @@
         background-repeat: no-repeat;
 
         &.forums {
-            background-image: url("https://res.cloudinary.com/dqqlm018i/image/upload/v1580914973/warcraft_3_refunded/forums_sc6zgh.png");
+            background-image: url("https://christiangriffin.ca/warcraft3refunded/warcraft_3_refunded_2020-02-05_10_17/forums_sc6zgh.png");
         }
 
         &.twitter {
-            background-image: url("https://res.cloudinary.com/dqqlm018i/image/upload/v1580914973/warcraft_3_refunded/twitter_dikt46.png");
+            background-image: url("https://christiangriffin.ca/warcraft3refunded/warcraft_3_refunded_2020-02-05_10_17/twitter_dikt46.png");
         }
 
         &.facebook {
-            background-image: url("https://res.cloudinary.com/dqqlm018i/image/upload/v1580914973/warcraft_3_refunded/facebook_vpzhdk.png");
+            background-image: url("https://christiangriffin.ca/warcraft3refunded/warcraft_3_refunded_2020-02-05_10_17/facebook_vpzhdk.png");
         }
 
         &.youtube {
-            background-image: url("https://res.cloudinary.com/dqqlm018i/image/upload/v1580914973/warcraft_3_refunded/youtube_d8elos.png");
+            background-image: url("https://christiangriffin.ca/warcraft3refunded/warcraft_3_refunded_2020-02-05_10_17/youtube_d8elos.png");
         }
 
         &.reddit {

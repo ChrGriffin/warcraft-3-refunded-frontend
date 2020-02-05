@@ -21,7 +21,7 @@
     @import "./../assets/scss/variables";
 
     section {
-        background-image: url("https://res.cloudinary.com/dqqlm018i/image/upload/v1580914973/warcraft_3_refunded/background4_hgpvk6.jpg");
+        background-image: url("https://christiangriffin.ca/warcraft3refunded/warcraft_3_refunded_2020-02-05_10_17/background4_hgpvk6.jpg");
         background-size: cover;
         background-position: top center;
     }

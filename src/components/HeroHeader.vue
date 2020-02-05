@@ -23,7 +23,7 @@
         display: flex;
         align-content: center;
         justify-content: center;
-        background-image: url("https://res.cloudinary.com/dqqlm018i/image/upload/v1580914973/warcraft_3_refunded/background1_f17rzx.jpg");
+        background-image: url("https://christiangriffin.ca/warcraft3refunded/warcraft_3_refunded_2020-02-05_10_17/background1_f17rzx.jpg");
         background-size: cover;
         background-position: center center;
         min-height: 90vh;
