@@ -3,19 +3,26 @@
         <h3>Lackluster Improvements</h3>
         <h4>Non-Revamped Cinematics</h4>
         <div class="divider"></div>
-        <p class="large">With Warcraft III: Reforged, you can now watch the original cinematics from 2002, in their original quality, completely unchanged!</p>
-        <p class="large">And if you were disappointed to see Blizzard adding more dynamic and interesting cutscenes, then worry not! They backed far, far away from that idea. But not before taking your preorder based on what they originally showed!</p>
-        <div class="video-wrapper" v-bind:style="{width: playerDimensions.width + 'px', height: playerDimensions.height + 'px'}">
-            <div v-if="!videoPlaying" v-bind:style="{width: playerDimensions.width + 'px', height: playerDimensions.height + 'px'}" class="video-preview" @click="playVideo">
-                <img :src="require('@/assets/images/youtube.png')" />
+        <p class="large">With Warcraft III: Reforged, you can now watch the original cinematics from 2002, in their
+            original quality, completely unchanged!</p>
+        <p class="large">And if you were disappointed to see Blizzard adding more dynamic and interesting cutscenes,
+            then worry not! They backed far, far away from that idea. But not before taking your preorder based on what
+            they originally showed!</p>
+        <div class="video-wrapper"
+             v-bind:style="{width: playerDimensions.width + 'px', height: playerDimensions.height + 'px'}">
+            <div v-if="!videoPlaying"
+                 v-bind:style="{width: playerDimensions.width + 'px', height: playerDimensions.height + 'px'}"
+                 class="video-preview" @click="playVideo">
+                <img src="https://res.cloudinary.com/dqqlm018i/image/upload/v1580914973/warcraft_3_refunded/youtube_d8elos.png"/>
             </div>
-            <youtube v-if="videoPlaying" youtube video-id="-4K2u2KbpdE" :player-width="playerDimensions.width" :player-height="playerDimensions.height" :player-vars="{autoplay: 1}" />
+            <youtube v-if="videoPlaying" youtube video-id="-4K2u2KbpdE" :player-width="playerDimensions.width"
+                     :player-height="playerDimensions.height" :player-vars="{autoplay: 1}"/>
         </div>
     </section>
 </template>
 
 <script lang="ts">
-    import {Component, Vue} from "vue-property-decorator";
+    import {Component, Vue} from 'vue-property-decorator';
 
     @Component
     export default class BadCinematics extends Vue {
@@ -23,23 +30,23 @@
         private videoPlaying = false;
 
         get playerDimensions() {
-            if(window.innerWidth < 540) {
+            if (window.innerWidth < 540) {
                 return {width: 384, height: 216};
             }
 
-            if(window.innerWidth < 700) {
+            if (window.innerWidth < 700) {
                 return {width: 512, height: 288};
             }
 
-            if(window.innerWidth < 800) {
+            if (window.innerWidth < 800) {
                 return {width: 640, height: 360};
             }
 
-            if(window.innerWidth < 900) {
+            if (window.innerWidth < 900) {
                 return {width: 788, height: 432};
             }
 
-            if(window.innerWidth < 1050) {
+            if (window.innerWidth < 1050) {
                 return {width: 896, height: 504};
             }
 
@@ -56,7 +63,7 @@
     @import "./../assets/scss/variables";
 
     section {
-        background-image: url("./../assets/images/background3.jpg");
+        background-image: url("https://res.cloudinary.com/dqqlm018i/image/upload/v1580914973/warcraft_3_refunded/background3_qiy6mr.jpg");
         background-size: cover;
         background-position: center top;
     }
@@ -70,7 +77,7 @@
         display: inline-block;
 
         .video-preview {
-            background-image: url("./../assets/images/videopreview.png");
+            background-image: url("https://res.cloudinary.com/dqqlm018i/image/upload/v1580914974/warcraft_3_refunded/videopreview_jafl1i.png");
             background-size: cover;
             position: relative;
             border: 2px solid $darkgrey;

@@ -2,7 +2,7 @@
     <header>
         <div class="header-content">
             <div>
-                <h1><img :src="require('@/assets/images/logo.png')" alt="Warcraft 3 Refucked Logo"/></h1>
+                <h1><img src="https://res.cloudinary.com/dqqlm018i/image/upload/v1580914974/warcraft_3_refunded/logo_pxhtr9.png" alt="Warcraft 3 Refucked Logo"/></h1>
                 <h2><span>A broken, dishonest, anti-consumer,</span><span>glorified remaster</span></h2>
             </div>
         </div>
@@ -10,7 +10,7 @@
 </template>
 
 <script lang="ts">
-    import {Component, Vue} from "vue-property-decorator";
+    import {Component, Vue} from 'vue-property-decorator';
 
     @Component
     export default class HeroHeader extends Vue {
@@ -23,7 +23,7 @@
         display: flex;
         align-content: center;
         justify-content: center;
-        background-image: url("./../assets/images/background1.jpg");
+        background-image: url("https://res.cloudinary.com/dqqlm018i/image/upload/v1580914973/warcraft_3_refunded/background1_f17rzx.jpg");
         background-size: cover;
         background-position: center center;
         min-height: 90vh;

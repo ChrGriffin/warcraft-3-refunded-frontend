@@ -10,7 +10,7 @@
 </template>
 
 <script lang="ts">
-    import {Component, Vue} from "vue-property-decorator";
+    import {Component, Vue} from 'vue-property-decorator';
 
     @Component
     export default class BadCinematics extends Vue {
@@ -21,7 +21,7 @@
     @import "./../assets/scss/variables";
 
     section {
-        background-image: url("./../assets/images/background4.jpg");
+        background-image: url("https://res.cloudinary.com/dqqlm018i/image/upload/v1580914973/warcraft_3_refunded/background4_hgpvk6.jpg");
         background-size: cover;
         background-position: top center;
     }

@@ -19,7 +19,7 @@
 </template>
 
 <script lang="ts">
-    import {Component, Vue} from "vue-property-decorator";
+    import {Component, Vue} from 'vue-property-decorator';
 
     @Component
     export default class AntiConsumer extends Vue {
@@ -30,7 +30,7 @@
     @import "./../assets/scss/variables";
 
     section {
-        background-image: url("https://bnetcmsus-a.akamaihd.net/cms/template_resource/COAVLK6JC8PF1541005874981.jpg");
+        background-image: url("https://res.cloudinary.com/dqqlm018i/image/upload/v1580915395/warcraft_3_refunded/COAVLK6JC8PF1541005874981_ywflnz.jpg");
         background-size: cover;
         background-position: center center;
     }
@@ -46,7 +46,7 @@
 
         .item {
             border: 2px solid $darkgrey;
-            background-image: url("https://bnetcmsus-a.akamaihd.net/cms/template_resource/K18CVIDGUY421541005858145.jpg");
+            background-image: url("https://res.cloudinary.com/dqqlm018i/image/upload/v1580915441/warcraft_3_refunded/K18CVIDGUY421541005858145_qudgki.jpg");
             background-position: top right;
             width: 48.5%;
             padding: 1em;

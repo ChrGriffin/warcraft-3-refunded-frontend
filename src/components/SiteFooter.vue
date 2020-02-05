@@ -22,7 +22,7 @@
 
 <style scoped lang="scss">
     footer {
-        background-image: url("./../assets/images/background5.jpg");
+        background-image: url("https://res.cloudinary.com/dqqlm018i/image/upload/v1580914973/warcraft_3_refunded/background5_kaccxp.jpg");
         background-position: top center;
         background-size: cover;
     }
@@ -42,23 +42,23 @@
         background-repeat: no-repeat;
 
         &.forums {
-            background-image: url("./../assets/images/forums.png");
+            background-image: url("https://res.cloudinary.com/dqqlm018i/image/upload/v1580914973/warcraft_3_refunded/forums_sc6zgh.png");
         }
 
         &.twitter {
-            background-image: url("./../assets/images/twitter.png");
+            background-image: url("https://res.cloudinary.com/dqqlm018i/image/upload/v1580914973/warcraft_3_refunded/twitter_dikt46.png");
         }
 
         &.facebook {
-            background-image: url("./../assets/images/facebook.png");
+            background-image: url("https://res.cloudinary.com/dqqlm018i/image/upload/v1580914973/warcraft_3_refunded/facebook_vpzhdk.png");
         }
 
         &.youtube {
-            background-image: url("./../assets/images/youtube.png");
+            background-image: url("https://res.cloudinary.com/dqqlm018i/image/upload/v1580914973/warcraft_3_refunded/youtube_d8elos.png");
         }
 
         &.reddit {
-            background-image: url("./../assets/images/reddit.png");
+            background-image: url("https://res.cloudinary.com/dqqlm018i/image/upload/v1580914974/warcraft_3_refunded/reddit_luqeek.png");
         }
     }
 </style>

@@ -28,7 +28,7 @@
 </template>
 
 <script lang="ts">
-    import {Component, Vue} from "vue-property-decorator";
+    import {Component, Vue} from 'vue-property-decorator';
 
     @Component
     export default class CutFeatures extends Vue {
@@ -39,7 +39,7 @@
     @import "./../assets/scss/variables";
 
     section {
-        background-image: linear-gradient(to left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("./../assets/images/background2.jpg");
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("https://res.cloudinary.com/dqqlm018i/image/upload/v1580914973/warcraft_3_refunded/background2_i9vffy.jpg");
         background-size: auto;
         background-repeat: no-repeat;
         background-position: calc(50% + 250px) center;
@@ -84,7 +84,7 @@
     @media screen and (max-width: 600px) {
         section {
             background-size: cover;
-            background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("./../assets/images/background2.jpg");
+            background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("https://res.cloudinary.com/dqqlm018i/image/upload/v1580914973/warcraft_3_refunded/background2_i9vffy.jpg");
             background-position: right center;
         }
 
