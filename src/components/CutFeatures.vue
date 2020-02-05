@@ -14,12 +14,12 @@
 
                     <div class="item">
                         <p class="title">Improved Cutscenes</p>
-                        <p>Over 4 hours of new cutscenes with cinematic cameras, new voice acting, and more story. Psyche! Same cutscenes, same voice acting, unchanged story.</p>
+                        <p>Over 4 hours of new cutscenes with cinematic cameras, new voice acting, and more story. Psyche! Same cutscenes, unchanged story.</p>
                     </div>
 
                     <div class="item">
                         <p class="title">Player Choice</p>
-                        <p>Ability to choose between the old and new campaign, voice acting, and user interface. Fuck you, you'll take the old and you'll damn well like it.</p>
+                        <p>Ability to choose between the old and new campaign, cinematics, and user interface. Fuck you, you'll take the old and you'll damn well like it.</p>
                     </div>
                 </div>
             </div>
@@ -83,6 +83,7 @@
 
     @media screen and (max-width: 600px) {
         section {
+            background-size: cover;
             background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("./../assets/images/background2.jpg");
             background-position: right center;
         }
