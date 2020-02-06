@@ -25,7 +25,7 @@ jobs:
         env:
           SSH_PUBLIC_KEY: ${{ secrets.SSH_PUBLIC_KEY }}
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        run: touch ~/.ssh/id_rsa.pub && touch ~/.ssh/id_rsa && echo ${SSH_PUBLIC_KEY} >> ~/.ssh/id_rsa.pub && echo ${SSH_PRIVATE_KEY} >> ~/.ssh/id_rsa
+        run: mkdir ~/.ssh && echo ${SSH_PUBLIC_KEY} >> ~/.ssh/id_rsa.pub && echo ${SSH_PRIVATE_KEY} >> ~/.ssh/id_rsa
       - name: SSH
         run: ls -la ~/.ssh
       - name: Copy Build to Server
