@@ -5,12 +5,13 @@
         <div class="divider"></div>
         <p class="large">If it's the same game, you may as well just not purchase Reforged, or refund your preorder, and play the original Warcraft 3, right?</p>
         <div class="grid">
-            <div class="item">
+            <div class="item refunds">
                 <h5>No Refunds</h5>
                 <p>Have you spent some time waiting in a multiplayer lobby? Tried out the campaign? Launched the game, ever? Sucks to be you, then. Blizzard is denying an enormous amount of refund requests, sometimes in direct contravention of local law, on the basis that the customer has already 'played too much'.</p>
+                <p>UPDATE: Blizzard is <a target="_blank" href="https://us.battle.net/support/en/article/191929">now offering automatic refunds</a> for Warcraft 3: Reforged, regardless of time played.</p>
             </div>
 
-            <div class="item">
+            <div class="item reforged">
                 <h5>Reforged Only</h5>
                 <p>Did you purchase Warcraft 3 on Battle.net? Did you expect to be able to play it in the future? Well, you can't, whether you bought it or not. Launching the Battle.net version of Warcraft 3 now sends you to the Reforged launcher. Blizzard is happy to keep the money you paid for Warcraft 3, though.</p>
             </div>
@@ -64,6 +65,17 @@
             p {
                 text-align: left;
                 font-size: 1.2rem;
+
+                &:nth-of-type(2) {
+                    margin-top: 1rem;
+                }
+            }
+
+            &.refunds {
+
+                p:first-of-type {
+                    text-decoration: line-through;
+                }
             }
         }
     }

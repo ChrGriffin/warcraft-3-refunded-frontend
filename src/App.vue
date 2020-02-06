@@ -127,4 +127,9 @@
         border: 2px solid $darkgrey;
         padding: 1rem;
     }
+
+    a {
+        color: $white;
+        text-decoration: underline;
+    }
 </style>
