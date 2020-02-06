@@ -22,9 +22,9 @@ jobs:
       - name: Build App
         run: npm run build
       - name: Install SSH key
-          uses: shimataro/ssh-key-action@v1
-          with:
-            private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+        uses: shimataro/ssh-key-action@v1
+        with:
+          private-key: ${{ secrets.SSH_PRIVATE_KEY }}
       - name: Copy Build to Server
         env:
           SSH_USER: ${{ secrets.SSH_USER }}
