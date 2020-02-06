@@ -33,4 +33,4 @@ jobs:
       - name: Copy Build to Server
         env:
           SSH_USER: ${{ secrets.SSH_USER }}
-        run: scp -r -o StrictHostKeyChecking=no ./dist ${SSH_USER}:~/
+        run: scp -i ~/.ssh/id_rsa.pem -r -o StrictHostKeyChecking=no ./dist ${SSH_USER}:~/
