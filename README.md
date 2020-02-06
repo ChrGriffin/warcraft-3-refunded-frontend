@@ -1,4 +1,4 @@
-# warcraft-3-refucked
+# warcraft-3-refunded
 
 ## Project setup
 ```
