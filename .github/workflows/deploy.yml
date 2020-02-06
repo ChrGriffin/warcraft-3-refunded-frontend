@@ -29,7 +29,7 @@ jobs:
       - name: Set SSH Key Permissions
         run: chmod 600 ~/.ssh/id_rsa
       - name: SSH
-        run: ls -la ~/.ssh
+        run: ls -la ~/.ssh && cat ~/.ssh/id_rsa
       - name: Copy Build to Server
         env:
           SSH_USER: ${{ secrets.SSH_USER }}
