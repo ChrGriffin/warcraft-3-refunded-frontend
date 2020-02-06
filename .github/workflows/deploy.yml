@@ -25,12 +25,12 @@ jobs:
         env:
           SSH_PUBLIC_KEY: ${{ secrets.SSH_PUBLIC_KEY }}
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        run: mkdir ~/.ssh && echo ${SSH_PUBLIC_KEY} >> ~/.ssh/id_rsa.pub && echo ${SSH_PRIVATE_KEY} >> ~/.ssh/id_rsa.pem
+        run: mkdir ~/.ssh && echo ${SSH_PUBLIC_KEY} >> ~/.ssh/id_rsa.pub && echo ${SSH_PRIVATE_KEY} >> ~/.ssh/id_rsa
       - name: Set SSH Key Permissions
-        run: chmod 600 ~/.ssh/id_rsa.pem
+        run: chmod 600 ~/.ssh/id_rsa
       - name: SSH
-        run: ls -la ~/.ssh && cat ~/.ssh/id_rsa.pem && cat ~/.ssh/id_rsa.pub
+        run: ls -la ~/.ssh
       - name: Copy Build to Server
         env:
           SSH_USER: ${{ secrets.SSH_USER }}
-        run: scp -i ~/.ssh/id_rsa.pem -r -o StrictHostKeyChecking=no ./dist ${SSH_USER}:~/
+        run: scp -r -o StrictHostKeyChecking=no ./dist ${SSH_USER}:~/
