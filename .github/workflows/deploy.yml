@@ -21,3 +21,9 @@ jobs:
         run: npm install
       - name: Build App
         run: npm run build
+      - name: Install SSH key
+        uses: shimataro/ssh-key-action@v1
+        with:
+          private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: Copy Build to Server
+        run: ls -la
