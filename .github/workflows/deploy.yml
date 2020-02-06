@@ -26,4 +26,4 @@ jobs:
         with:
           private-key: ${{ secrets.SSH_PRIVATE_KEY }}
       - name: Copy Build to Server
-        run: ls -la
+        run: scp -r ./dist ${{ secrets.SSH_USER }}:~/
