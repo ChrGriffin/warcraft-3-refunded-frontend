@@ -22,14 +22,9 @@ jobs:
       - name: Build App
         run: npm run build
       - name: Install SSH key
-        env:
-          SSH_PUBLIC_KEY: ${{ secrets.SSH_PUBLIC_KEY }}
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        run: mkdir ~/.ssh && echo ${SSH_PUBLIC_KEY} >> ~/.ssh/id_rsa.pub && echo ${SSH_PRIVATE_KEY} >> ~/.ssh/id_rsa
-      - name: Set SSH Key Permissions
-        run: chmod 600 ~/.ssh/id_rsa
-      - name: SSH
-        run: ls -la ~/.ssh
+          uses: shimataro/ssh-key-action@v1
+          with:
+            private-key: ${{ secrets.SSH_PRIVATE_KEY }}
       - name: Copy Build to Server
         env:
           SSH_USER: ${{ secrets.SSH_USER }}
