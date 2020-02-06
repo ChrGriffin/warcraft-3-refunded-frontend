@@ -4,7 +4,6 @@ on: [push]
 
 env:
   NODE_VERSION: 11.x
-  SSH_USER: ${{ secrets.SSH_USER }}
 
 jobs:
   build-and-test:
@@ -27,4 +26,5 @@ jobs:
         with:
           private-key: ${{ secrets.SSH_PRIVATE_KEY }}
       - name: Copy Build to Server
+        env: ${{ secrets.SSH_USER }}
         run: scp -r ./dist ${{ SSH_USER }}:~/
