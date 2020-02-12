@@ -21,7 +21,7 @@
     @import "./../assets/scss/variables";
 
     section {
-        background-image: url("https://christiangriffin.ca/warcraft3refunded/warcraft_3_refunded_2020-02-05_10_17/background4_hgpvk6.jpg");
+        background-image: url("./../assets/images/background6.jpg");
         background-size: cover;
         background-position: top center;
     }
@@ -51,6 +51,6 @@
     }
 
     blockquote {
-        background-image: url("https://bnetcmsus-a.akamaihd.net/cms/template_resource/FRBX8SRMGV4R1541005873904.jpg");
+        background-image: url("./../assets/images/background7.jpg");
     }
 </style>

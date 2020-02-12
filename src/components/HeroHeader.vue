@@ -2,7 +2,7 @@
     <header>
         <div class="header-content">
             <div>
-                <h1><img src="https://res.cloudinary.com/dqqlm018i/image/upload/v1580914974/warcraft_3_refunded/logo_pxhtr9.png" alt="Warcraft 3 Refucked Logo"/></h1>
+                <h1><img :src="require('./../assets/images/logo.png')" alt="Warcraft 3 Refucked Logo"/></h1>
                 <h2><span>A broken, dishonest, anti-consumer,</span><span>glorified remaster</span></h2>
             </div>
         </div>
@@ -23,7 +23,7 @@
         display: flex;
         align-content: center;
         justify-content: center;
-        background-image: url("https://christiangriffin.ca/warcraft3refunded/warcraft_3_refunded_2020-02-05_10_17/background1_f17rzx.jpg");
+        background-image: url("./../assets/images/background1.jpg");
         background-size: cover;
         background-position: center center;
         min-height: 90vh;

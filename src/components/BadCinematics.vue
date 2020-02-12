@@ -13,7 +13,7 @@
             <div v-if="!videoPlaying"
                  v-bind:style="{width: playerDimensions.width + 'px', height: playerDimensions.height + 'px'}"
                  class="video-preview" @click="playVideo">
-                <img src="https://christiangriffin.ca/warcraft3refunded/warcraft_3_refunded_2020-02-05_10_17/youtube_d8elos.png"/>
+                <img :src="require('./../assets/images/youtube.png')"/>
             </div>
             <youtube v-if="videoPlaying" youtube video-id="-4K2u2KbpdE" :player-width="playerDimensions.width"
                      :player-height="playerDimensions.height" :player-vars="{autoplay: 1}"/>
@@ -63,7 +63,7 @@
     @import "./../assets/scss/variables";
 
     section {
-        background-image: url("https://christiangriffin.ca/warcraft3refunded/warcraft_3_refunded_2020-02-05_10_17/background3_qiy6mr.jpg");
+        background-image: url("./../assets/images/background5.jpg");
         background-size: cover;
         background-position: center top;
     }
@@ -77,7 +77,7 @@
         display: inline-block;
 
         .video-preview {
-            background-image: url("https://res.cloudinary.com/dqqlm018i/image/upload/v1580914974/warcraft_3_refunded/videopreview_jafl1i.png");
+            background-image: url("./../assets/images/videopreview.png");
             background-size: cover;
             position: relative;
             border: 2px solid $darkgrey;
